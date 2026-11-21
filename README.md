@@ -65,16 +65,59 @@ Trackly is a full-stack, multi-user bug and issue tracking application built wit
 
 ## Application Workflow
 
-No genuine screenshots of the running Trackly interface are stored in the repository yet (no `screenshots/` assets exist). The core implemented workflow follows this sequence:
+### 1. Registration and Login
 
-1. **Registration and Login** (`/login`, `/register`): Two-column auth view with field validation, password strength meter, and invite redirect handling. *(Target path: `screenshots/login.png`, `screenshots/register.png`)*
-2. **Dashboard** (`/`): Summarizes KPI counts, Recharts priority/type charts, assigned and overdue issues, project completion bars, recent activity, and a Pending Project Invitations banner. *(Target path: `screenshots/dashboard.png`)*
-3. **Projects & Project Details** (`/projects`, `/projects/:id`): Searchable project table and tabbed workspace (`Overview`, `Issues`, `Kanban Board`, `Activity`, `Settings`). *(Target path: `screenshots/projects.png`, `screenshots/project-details.png`)*
-4. **Issue Management** (`/issues`, `/issues/:id`): Filterable table/list view, quick-view drawer and full issue page, metadata selectors, attachments, comments, and activity history. *(Target path: `screenshots/issues.png`, `screenshots/issue-details.png`)*
-5. **Kanban Board** (`/board`): Three-column board (`To Do`, `In Progress`, `Done`) with drag-and-drop status updates and project/priority filters. *(Target path: `screenshots/kanban-board.png`)*
-6. **Team Collaboration** (`/team`): Collaborator directory showing per-project roles plus an invitation management table for `Owner` and `Admin` users. *(Target path: `screenshots/team-members.png`)*
-7. **Invitations** (`/invitations`, `/invite/:token`): Dedicated inbox and token validation page where recipients explicitly **Accept** or **Reject** invitations before gaining project access. *(Target path: `screenshots/invitations.png`, `screenshots/accept-invitation.png`)*
-8. **Role-Based Access**: UI actions in member lists, settings, drawers, and boards adapt dynamically to the user's `Owner`, `Admin`, `Member`, or `Viewer` role.
+Trackly provides dedicated registration and sign-in pages (`/register` and `/login`) featuring client-side form validation, real-time password strength indicators, and secure JWT-authenticated account access with invite redirect support.
+
+![Login](screenshots/login.png)
+
+![Register](screenshots/register.png)
+
+### 2. Dashboard
+
+The main dashboard (`/`) presents an operational overview of accessible projects, including project statistics, issue summaries, priority and issue-type charts, assigned and overdue issues, project completion progress, and recent activity.
+
+![Dashboard](screenshots/dashboard.png)
+
+### 3. Projects and Project Details
+
+Users can manage workspaces and browse searchable project listings from `/projects`, then open `/projects/:id` to inspect project information and navigate across dedicated `Overview`, `Issues`, `Kanban Board`, `Activity`, and `Settings` tabs.
+
+![Projects](screenshots/projects.png)
+
+![Project Details](screenshots/project-details.png)
+
+### 4. Issue Management
+
+Teams can create, view, filter, and manage issues from `/issues` and `/issues/:id`, configuring statuses, priorities, issue types, assignees, file attachments, threaded comments, and full activity history.
+
+![Issues](screenshots/issues.png)
+
+![Issue Details](screenshots/issue-details.png)
+
+### 5. Kanban Board
+
+The Kanban board (`/board`) organizes project work into a three-column workflow (`To Do`, `In Progress`, and `Done`) with drag-and-drop status transitions alongside project and priority filters.
+
+![Kanban Board](screenshots/kanban-board.png)
+
+### 6. Team Collaboration
+
+The team directory (`/team`) lists collaborators with their project-specific roles and provides invitation management controls for authorized `Owner` and `Admin` users.
+
+![Team Members](screenshots/team-members.png)
+
+### 7. Invitations
+
+Invited users receive pending invitations in their `/invitations` inbox or via a direct `/invite/:token` link and must explicitly accept or reject an invitation before gaining access to the project.
+
+![Invitations](screenshots/invitations.png)
+
+![Accept Invitation](screenshots/accept-invitation.png)
+
+### 8. Role-Based Access Control
+
+Permissions and available UI actions adapt dynamically across `Owner`, `Admin`, `Member`, and `Viewer` roles: owners retain full project and admin management control, admins manage non-admin members and invitations, members create and update issues and comments, and viewers have read-only access.
 
 ---
 
