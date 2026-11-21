@@ -1,0 +1,6 @@
+{
+  "name": "Trackly",
+  "description": "Team-based bug and issue tracking workspace with Kanban boards, project workspaces, activity timelines, and collaborative triage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
