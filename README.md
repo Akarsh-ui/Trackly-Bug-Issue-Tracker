@@ -6,7 +6,7 @@ Trackly is a full-stack, multi-user bug and issue tracking application built wit
 
 ## Live Demo
 
-- **Live Application:** `[https://trackly-bug-issue-tracker.onrender.com]`
+- **Live Application:** `[https://trackly-bug-issue-tracker.onrender.com]`(https://trackly-bug-issue-tracker.onrender.com)
 - **GitHub Repository:** [https://github.com/Akarsh-ui/Trackly-Bug-Issue-Tracker](https://github.com/Akarsh-ui/Trackly-Bug-Issue-Tracker)
 
 ---
