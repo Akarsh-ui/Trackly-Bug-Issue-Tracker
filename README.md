@@ -6,7 +6,7 @@ Trackly is a full-stack, multi-user bug and issue tracking application built wit
 
 ## Live Demo
 
-- **Live Application:** `[INSERT MY ACTUAL RENDER URL HERE]`
+- **Live Application:** `[https://trackly-bug-issue-tracker.onrender.com]`
 - **GitHub Repository:** [https://github.com/Akarsh-ui/Trackly-Bug-Issue-Tracker](https://github.com/Akarsh-ui/Trackly-Bug-Issue-Tracker)
 
 ---
@@ -272,7 +272,7 @@ Verification was performed locally against the codebase (no permanent test runne
 
 Trackly is configured for unified deployment on **Render** with **MongoDB Atlas**:
 
-- **Live Demo:** `[INSERT MY ACTUAL RENDER URL HERE]`
+- **Live Demo:** `[https://trackly-bug-issue-tracker.onrender.com]`
 - **Build Command:** `npm install && npm run build`
 - **Start Command:** `npm run start` (runs `node server.ts` with `NODE_ENV=production` to serve `dist/` and `/api/*`)
 - **Production Variables (configured privately in Render):** `NODE_ENV=production`, `MONGODB_URI`, `JWT_SECRET`, `VITE_USE_API=true`, `FRONTEND_URL`, and `VITE_APP_URL`.
